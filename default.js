@@ -31,3 +31,10 @@ function setTheme(mode) {
 
   localStorage.setItem("theme", mode);
 }
+
+const form = document.getElementById("contact-form");
+form.addEventListener("submit", function () {
+  setTimeout(() => {
+    form.reset();
+  }, 1000);
+});

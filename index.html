@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+    <script src="https://kit.fontawesome.com/f709b5f2ed.js" crossorigin="anonymous"></script>
     <title>Ganochir Ariunkhishig</title>
   </head>
   <body>
@@ -28,7 +29,7 @@
               <div id="dot-3" class="browser-dot"></div>
             </div>
             <ul id="navigation">
-              <li><a href="#">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
 
@@ -44,8 +45,7 @@
               <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
             <p id="settings-note">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
-              sapiente.
+              Customize the appearance to match your preference.
             </p>
           </div>
 
@@ -56,8 +56,9 @@
                 <div id="corner-tr" class="corner"></div>
                 <h3>What I Do</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Atque, cumque!
+              I focus on writing clean, maintainable code and continuously improving 
+              my skills as a developer.
+              
                 </p>
                 <div id="corner-br" class="corner"></div>
                 <div id="corner-bl" class="corner"></div>
@@ -74,18 +75,19 @@
           <div class="about-me">
             <h4>More About me</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
-              quam
+              I am currently transitioning into a web development career.
+Through self-study and online courses, I have built projects using HTML, CSS, JS and Node.js.
+I am highly motivated to keep learning and contribute to real development teams.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
-              quam
-            </p>
+
             <hr />
             <h4>Self-Studying</h4>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
-              perferendis: <a href="#">Download Resume</a>
+               I am currently self-studying web development with a focus on JavaScript.
+              <button class="download-btn"
+                onclick="window.open('./assets/resume-Ari.pdf')">Download Resume</a>  
+              </button>
+              
             </p>
             <div id="skills">
               <ul>
@@ -106,10 +108,10 @@
             </div>
           </div>
           <div class="social-links">
-            <img id="social_img" src="images/posts.jpg" />
+            <img id="social_img" src="images/social.jpg" />
             <h3>Find me on Github & Linkedin</h3>
-            <a target="_blank" href="#">Linkedin: @Gan-Ochir Ariunkhishig</a>
-            <a target="_blank" href="#">Github: Nomad09Ari</a>
+            <a target="_blank" href="https://www.linkedin.com/in/gan-ochir-ariunkhishig-ba35b8109/"><i class="fa-brands fa-linkedin"></i> Gan-Ochir Ariunkhishig</a>
+            <a target="_blank" href="https://github.com/Nomad09Ari"><i class="fa-brands fa-github"></i> Nomad09Ari</a>
           </div>
         </div>
       </div>
@@ -124,30 +126,34 @@
               <img class="thumbnail" src="images/scorekeeper.jpg" />
               <div class="post-preview">
                 <h6 class="post-title">ScoreKeeper</h6>
-                <p class="post-intro">This is a sentence. Some more text</p>
-                <a href="#">Read more</a>
+                <p class="post-intro">最大９点までに勝負するためのゲームアプリです。二人で遊ぼう！</p>
+                <a target="_blank" href="./ScoreKeeper/index.html">Let's play</a>
               </div>
             </div>
           </div>
 
           <div>
             <div class="posts">
-              <img class="thumbnail" src="images/nomadcamp.jpg" />
+              
+              <img class="thumbnail filter" src="images/nomadcamp.jpg" />
+              
               <div class="post-preview">
                 <h6 class="post-title">NomadCamp</h6>
-                <p class="post-intro">This is a sentence. Some more text</p>
-                <a href="#">Read more</a>
+                <p class="post-intro">キャンプ場サイトです。モンゴルの旅行に最適です！</p>
+                <a target="_blank" href="#">作成中...<i class="fa-solid fa-person-digging"></i></a>
               </div>
             </div>
           </div>
 
           <div>
             <div class="posts">
-              <img class="thumbnail" src="images/bankistapp.jpg" />
+              
+              <img class="thumbnail filter" src="images/bankistapp.jpg" />
+              
               <div class="post-preview">
                 <h6 class="post-title">Bankist app</h6>
-                <p class="post-intro">This is a sentence. Some more text</p>
-                <a href="#">Read more</a>
+                <p class="post-intro">銀行口座の操作をシミュレーションするWebアプリです。</p>
+                <a href="#">作成予定...<i class="fa-solid fa-calendar-check"></i></a>
               </div>
             </div>
           </div>
@@ -155,10 +161,13 @@
       </div>
     </section>
 
-    <section class="s2">
+    <section id="contact" class="s2">
       <div class="main-container">
         <h3 style="text-align: center">Get in touch</h3>
-        <form id="contact-form">
+        <form action="https://api.web3forms.com/submit" 
+              method="POST" id="contact-form">
+          <input type="hidden" name="access_key" value="6f302713-50a4-44ba-9f83-4ca55b1b6e6e">
+          
           <label>Name</label>
           <input type="text" name="name" class="input-field" />
 

@@ -329,6 +329,10 @@ ul {
   object-fit: cover;
 }
 
+.filter {
+  filter: blur(2px);
+}
+
 .posts {
   border: 1px solid var(--borderColor);
 
